@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #001f3f, #0074D9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: repeat(3, 75px);
+  gap: 10px;
+  padding: 15px;
+  border: 4px solid #001f3f;
+  border-radius: 15px;
+  background-color: #005288;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  background-color: #7FDBFF;
+  border: 2px solid #001f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cell:hover {
+  background-color: #cceeff;
+}
+
+.info-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+}
+
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+button#reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #001f3f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#reset-button:hover {
+  background-color: #003366;
+}
